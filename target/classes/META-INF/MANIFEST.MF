@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ckandivs
+Build-Jdk: 11.0.5
+Implementation-Title: SpringBoot1
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: projects
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/SpringBoot1/
+Created-By: Maven Integration for Eclipse
+
