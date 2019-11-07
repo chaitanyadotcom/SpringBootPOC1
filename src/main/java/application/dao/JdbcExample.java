@@ -118,9 +118,9 @@ public class JdbcExample
 				customer.put("firstName",rs.getString("FirstName"));
 				customer.put("LastName",rs.getString("LastName"));
 				customer.put("DOB",rs.getString("DOB"));
-				customer.put("SSN",rs.getString("SSN"));
+				customer.put("EncryptedSSN",rs.getString("SSN"));
 				customer.put("DecryptedSSN",rs.getString("DecryptedSSN"));
-				customer.put("PWD",rs.getString("PWD"));
+				customer.put("EncryptedPWD",rs.getString("PWD"));
 				customer.put("DecryptedPWD",rs.getString("DecryptedPWD"));
 			}
 			
