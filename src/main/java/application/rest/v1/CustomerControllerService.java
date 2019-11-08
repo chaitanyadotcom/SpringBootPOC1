@@ -86,7 +86,7 @@ public class CustomerControllerService{
 	public Map<String, String> getCustomerDetails(
 			@RequestParam(name="fName") String fName, 
 			@RequestParam(name="lName") String lName,
-			@RequestParam(name="customerId") String customerId,
+			//@RequestParam(name="customerId") String customerId,
 			HttpServletRequest request) throws Exception {
 		
 		
@@ -100,7 +100,8 @@ public class CustomerControllerService{
 			errorJson=errorJson.replaceAll("DATESTRING", currentDate);
 			
 			
-				result = jdbcQuery.getCustomerInfo(fName, lName, customerId);
+				//result = jdbcQuery.getCustomerInfo(fName, lName, customerId);
+				result = jdbcQuery.getCustomerInfo(fName, lName);
 				
 				if(null != result && result.size() >0) {
 				

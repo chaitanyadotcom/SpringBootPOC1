@@ -78,7 +78,8 @@ public class JdbcExample
      * @param socialSecurity
      * @return
      */
-    public Map<String, String> getCustomerInfo(String fName, String lName, String customerId) {
+    //public Map<String, String> getCustomerInfo(String fName, String lName, String customerId) {
+    public Map<String, String> getCustomerInfo(String fName, String lName) {
     	Map<String, String> customer = new HashMap<String, String>();
     	Connection conn =null;
     	try {
@@ -87,11 +88,11 @@ public class JdbcExample
 					"PWD, CONVERT(VARCHAR(50), DecryptByKey(PWD))\n" + 
 					" AS DecryptedPWD FROM Customer");
 			
-			if(null != customerId & customerId.trim().length() >0 ) {
-				query.append(" where customerId = "+customerId);
-			} 
+			//if(null != customerId & customerId.trim().length() >0 ) {
+				//query.append(" where customerId = "+customerId);
+			//} 
 			if(null != fName & fName.trim().length() >0 ) {
-				query.append(" and FirstName = '"+fName+"'");
+				query.append(" where FirstName = '"+fName+"'");
 			}
 			if(null != lName & lName.trim().length() >0 ) {
 				query.append(" and LastName = '"+lName+"'");
